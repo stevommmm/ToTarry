@@ -1,9 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.c45y.nerddown</groupId>
-    <artifactId>NerdDown</artifactId>
+    <groupId>com.c45y.totarry</groupId>
+    <artifactId>ToTarry</artifactId>
     <version>1.0</version>
-    <name>NerdDown</name>
+    <name>ToTarry</name>
     <url>http://nerd.nu/</url>
     <repositories>
         <repository>
