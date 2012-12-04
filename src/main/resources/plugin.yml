@@ -1,7 +1,7 @@
 author: C45Y
 database: false
-main: com.c45y.nerddown.NerdDown
-name: NerdDown
+main: com.c45y.totarry.ToTarry
+name: ToTarry
 startup: postworld
 url: http://nerd.nu/
 version: '1.0'
