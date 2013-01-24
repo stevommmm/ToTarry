@@ -3,7 +3,7 @@ package com.c45y.totarry;
 import com.c45y.events.PlayerDisconnectEvent;
 import com.c45y.hooks.TarryHook;
 import java.util.HashMap;
-import org.bukkit.craftbukkit.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_4_6.entity.CraftPlayer;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
@@ -22,7 +22,7 @@ public class ToTarry extends JavaPlugin implements Listener {
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
-        new TarryHook(this, ((CraftPlayer) event.getPlayer()).getHandle().netServerHandler);
+        new TarryHook(this, ((CraftPlayer) event.getPlayer()).getHandle().playerConnection);
     }
 
     @EventHandler
