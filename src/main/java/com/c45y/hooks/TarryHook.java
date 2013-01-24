@@ -6,20 +6,20 @@ package com.c45y.hooks;
 
 import com.c45y.events.PlayerDisconnectEvent;
 import com.c45y.totarry.ToTarry;
-import net.minecraft.server.NetServerHandler;
+import net.minecraft.server.v1_4_6.PlayerConnection;
 import org.bukkit.Bukkit;
-import org.bukkit.craftbukkit.CraftServer;
+import org.bukkit.craftbukkit.v1_4_6.CraftServer;
 
 /**
  *
  * @author c45y
  */
-public class TarryHook extends NetServerHandler {
+public class TarryHook extends PlayerConnection {
 
-    private final NetServerHandler nsh;
+    private final PlayerConnection nsh;
     private final ToTarry plugin;
 
-    public TarryHook(ToTarry plugin, NetServerHandler nsh) {
+    public TarryHook(ToTarry plugin, PlayerConnection nsh) {
         super(((CraftServer) Bukkit.getServer()).getServer(), nsh.networkManager, nsh.player);
         this.nsh = nsh;
         this.plugin = plugin;
